@@ -30,7 +30,7 @@ conn.on('connect', () => {
       fileName = answer;
       conn.on('data', (file) => {
         fs.writeFile(`./client-files/${fileName}`, file, (err) => {
-          if(err){
+          if (err) {
             throw err;
           } else {
             console.log('File transfer complete.');

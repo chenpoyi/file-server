@@ -1,5 +1,5 @@
 const net = require('net');
-const request = require('request');
+
 const server = net.createServer();
 const fs = require('fs');
 
